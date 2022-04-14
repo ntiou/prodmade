@@ -1,0 +1,67 @@
+/* nav admin dropdown*/
+.my_account:hover>div,
+.my_account:focus-within>div,
+.my_account ul:hover,
+.my_account ul:focus {
+    display: block;
+}
+
+.my_account {
+    position: relative;
+    display: inline-block;
+}
+
+ .my_account >div {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    right: 0;
+    padding: 5px;
+    border-radius: 5px;
+    animation: dropDownAnimation 200ms ease-out 1;
+    transform-origin: center center;
+}
+
+@keyframes dropDownAnimation {
+    0% {
+        transform: translateZ(200px) transLateY(40px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateZ(-10px) transLateY(0px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateZ(0px) transLateY(0px);
+        opacity: 1;
+    }
+}
+
+ .my_account .dropdown-content li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ .my_account .dropdown-content li a {
+    color: black;
+}
+
+/* single product */
+.product_status {
+    float: right;
+    
+}
+.product_status.ok{
+    color: green;
+}
+
+.product_status.none{
+    color: red;
+}
+.list-group{
+    max-height: 300px;
+    overflow-y: scroll;
+}
