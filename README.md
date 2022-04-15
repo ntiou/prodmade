@@ -1,3 +1,5 @@
+-- installé composer dans votre environnement 
+
 ## Prodmade test procedure
 
 1. Créer la base de données `prodmade` dans MySQL
